@@ -1,6 +1,6 @@
 # pull-opc
 
-pull stream for Open Pixel Control
+[pull streams](https://pull-stream.github.io) for [Open Pixel Control](http://openpixelcontrol.org/)
 
 ```shell
 npm install --save pull-opc
@@ -36,13 +36,13 @@ emits a generic [Open Pixel Control message][opc message]. *Data* should be a bu
 
 [opc message]: https://github.com/scanlime/fadecandy/blob/master/doc/fc_protocol_opc.md#command-format
 
-### `createPixelsEncoder = require('pull-opc/encoder')
+### `createPixelsEncoder = require('pull-opc/encoder')`
 
 ### `pixelsEncoder = createPixelsEncoder(channel)`
 
 `pixelsEncoder` is a through stream that receives `opc/strand` buffers and encodes them to Open Pixel Control messages.
 
-### `createDecoder = require('pull-opc/decoder')
+### `createDecoder = require('pull-opc/decoder')`
 
 ### `decoder = createDecoder()`
 
